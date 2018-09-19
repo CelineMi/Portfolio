@@ -8,156 +8,234 @@
   src: url(https://fonts.googleapis.com/css?family=VT323);
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-  margin: 0;
-}
 
 body {
   background-image: url("img/fond.png");
+  background-size: 100%;
+  background-repeat: repeat;
 }
 
-#accueil {
-  margin-top: 30px;
+h5 {
+  font-family: "Press Start 2P";
+  font-size: 3vw;
+  text-shadow: 4px 4px 0 #000;
+  text-align: center;
+  color: white;
+  margin-top: 5%;
+}
+.taillelogo {
+  width: 95%;
+  text-align: right;
+  
 }
 
-.navbar {
-  margin-left: -30px;
-  margin-right: -30px;
-}
 
-/* BLOC IMAGES */
-.no-gutter {
-  width: 90%;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+.text-center {
+  width: 60%;
+  text-align: center;
 }
 
 .notrelogo {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-right: 80px;
+  background-image: url("img/logo.png");
+  height: 100%;
 }
+
+
 
 .blocprofil {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   color: white;
   max-width: 250px;
   text-align: center;
   position: relative;
-  background: transparent;
-  width: 95%;
-  margin: 0 auto;
-  margin-top: 30px;
+  width: 80%;
+  margin: auto;
+  border: none;
+  margin-top: 15%;
 }
 
 .nomprofil {
   color: white;
   position: absolute;
   width: 100%;
-  bottom: 5%;
-  text-align: center;
-  font-family: "VT323";
-  font-size: 50px;
-}
-
-/* entire container, keeps perspective */
-.flip-container {
-  perspective: 1000px;
-}
-
-/* flip the pane when hovered */
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  transform: rotateY(180deg);
-}
-
-.flip-container,
-.front,
-.back {
-  width: 250px;
-  height: 360px;
-  margin: auto;
-}
-
-/* flip speed goes here */
-.flipper {
-  transition: 0.9s;
-  transform-style: preserve-3d;
-
-  position: relative;
-}
-
-/* hide back of pane during swap */
-.front,
-.back {
-  backface-visibility: hidden;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.card-img-top {
-  max-width: 250px;
-  max-height: 250px;
-}
-
-/* front pane, placed above back */
-.front {
-  /* for firefox 31 */
-  transform: rotateY(0deg);
-}
-
-/* back, initially hidden pane */
-.back {
-  transform: rotateY(180deg);
-}
-
-/*FOOTER */
-.footeraccueil {
-  margin-left: -30px;
-  margin-right: -30px;
-  padding-top: 10px;
-  background: #f8f9fa;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-.logowcs {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-}
-
-ul {
-  list-style: none;
-}
-
-/*JUMBOTRONS */
-.jumbohaut {
-  padding: 5px;
-  max-width: 90%;
-  margin: 0 auto;
+  left: 0%;
   text-align: center;
   font-family: "Press Start 2P";
-  background-color: transparent;
-  color: white;
   font-size: 30px;
+
 }
 
-.jumbobas {
+.fondNoir{
+  background-color: black;
   padding: 5px;
-  max-width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "VT323";
-  background-color: transparent;
-  color: white;
-  font-size: 30px;
 }
+
+/* HOVER LISA */
+.hauteurLienProfil {
+  height: 300px;
+  width: 300px;
+}
+
+.Bg-imglisa {
+  margin: 0 auto;
+  position: relative;
+  background-image: url("img/Lisa1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 300px;
+  height: 300px;
+  transition: background-image 1s ease-in-out;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .Bg-imglisa {
+  position: relative;
+  background-image: url("img/Lisa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HOVER AYMERIC */
+
+.Bg-imgaymeric {
+  margin: 0 auto;
+  position: relative;
+  background-image: url("img/Aymeric1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 300px;
+  height: 300px;
+  transition: background-image 1s ease-in-out;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .Bg-imgaymeric {
+  position: relative;
+  background-image: url("img/Aymeric.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HOVER CELINE */
+
+.Bg-imgceline {
+  margin: 0 auto;
+  position: relative;
+  background-image: url("img/Celine1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 300px;
+  height: 300px;
+  transition: background-image 1s ease-in-out;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .Bg-imgceline {
+  position: relative;
+  background-image: url("img/Celine.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HOVER PAUL */
+
+.Bg-imgpaul {
+  margin: 0 auto;
+  position: relative;
+  background-image: url("img/Paul1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 300px;
+  height: 300px;
+  transition: background-image 1s ease-in-out;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .Bg-imgpaul {
+  position: relative;
+  background-image: url("img/Paul.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HOVER KAPUCINE */
+
+.Bg-imgkapucine {
+  margin: 0 auto;
+  position: relative;
+  background-image: url("img/Kapucine1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 300px;
+  height: 300px;
+  transition: background-image 1s ease-in-out;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .Bg-imgkapucine {
+  position: relative;
+  background-image: url("img/Kapucine.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HOVER IOANNIS */
+
+.Bg-imgioannis {
+  margin: 0 auto;
+  position: relative;
+  background-image: url("img/Ioannis1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 300px;
+  height: 300px;
+  transition: background-image 1s ease-in-out;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .Bg-imgioannis {
+  position: relative;
+  background-image: url("img/Ioannis.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+

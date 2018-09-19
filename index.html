@@ -9,165 +9,130 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding:0px;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse container-fluid" id="navbarNavDropdown">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="groupe1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            A-D
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="groupe1">
+                            <a class="dropdown-item" href="page1.html">Groupe A-B</a>
+                            <a class="dropdown-item" href="page2.html">Groupe B-C</a>
+                            <a class="dropdown-item" href="page3.html">Groupe C-D</a>
+                        </div>
+                    </li>
 
-                    <ul class="navbar-nav ml-auto">
-                        <li class="ml-auto">
-                            <span class="navbar-text ml-auto text-dark mr-3"> Listes d'élèves </span>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="groupe1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                A-D
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="groupe1">
-                                <a class="dropdown-item" href="page1.html">Groupe A-B</a>
-                                <a class="dropdown-item" href="page2.html">Groupe B-C</a>
-                                <a class="dropdown-item" href="page3.html">Groupe C-D</a>
-                            </div>
-                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="groupe2" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            E-M
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="groupe2">
+                            <a class="dropdown-item" href="page4.html">Groupe E-G</a>
+                            <a class="dropdown-item" href="page5.html">Groupe G-K</a>
+                            <a class="dropdown-item" href="page6.html">Groupe K-M</a>
+                        </div>
+                    </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="groupe2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                E-M
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="groupe2">
-                                <a class="dropdown-item" href="page4.html">Groupe E-G</a>
-                                <a class="dropdown-item" href="page5.html">Groupe G-K</a>
-                                <a class="dropdown-item" href="page6.html">Groupe K-M</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="groupe3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                M-Y
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="groupe3">
-                                <a class="dropdown-item" href="page7.html">Groupe M-N</a>
-                                <a class="dropdown-item" href="page8.html">Groupe P-R</a>
-                                <a class="dropdown-item" href="page9.html">Groupe S-Y</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="groupe3" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            M-Y
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="groupe3">
+                            <a class="dropdown-item" href="page7.html">Groupe M-N</a>
+                            <a class="dropdown-item" href="page8.html">Groupe P-R</a>
+                            <a class="dropdown-item" href="page9.html">Groupe S-Y</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
-        <section id="accueil">
-            <div class="row">
-                <div class="col-12">
-                    <div class="jumbotron jumbotron-fluid jumbohaut">
-                        <div class="container">
-                            <p>Work attractive and creative</p>
-                        </div>
-                    </div>
-                </div>
+    </div>
 
-            </div>
-            <div class="row no-gutter align-items-center">
 
-                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                    <div class="notrelogo">
-                        <img src="img/logo.png" class="rounded mx-auto d-block " alt="Logo groupe 6x7 ">
+
+    <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-2 col-xl-2">
+            <img src="img/logo.png" class="taillelogo">
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-10 col-xl-10">
+            <h5>Work attractive and creative</h5>
+        </div>
+    </div>
+
+
+
+    <section id="accueil">
+        <div class="row profilCardContainer">
+
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 random">
+                    <div class="card blocprofil ">
+                        <a href="PageProfil_Lisa.html" alt="La photo équipe Lisa" class="hauteurLienProfil">
+                            <div class="Bg-imglisa"></div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 flip-container">
-                            <div class="card blocprofil flipper">
-                                <a href="#" alt="La photo équipe Lisa">
-                                    <img class="card-img-top front" src="img/Lisa.bmp" alt="Card image cap">
-                                    <img class="card-img-top back" src="img/Lisa.jpg" alt="Card image cap">
-                            </div>
                             <div class="nomprofil">Lisa</div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 flip-container">
-                            <div class="card blocprofil flipper">
-                                <a href="#" alt="La photo équipe Aymeric">
-                                    <img class="card-img-top front" src="img/Aymeric.bmp" alt="Card image cap">
-                                    <img class="card-img-top back" src="img/Aymeric.jpg" alt="Card image cap">
-                            </div>
-                            <div class="nomprofil">Aymeric</div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 flip-container">
-                            <div class="card blocprofil flipper">
-                                <a href="#" alt="La photo équipe Céline">
-                                    <img class="card-img-top front" src="img/Celine.bmp" alt="Card image cap">
-                                    <img class="card-img-top back" src="img/Celine.jpg" alt="Card image cap">
-                            </div>
-                            <div class="nomprofil">Céline</div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 flip-container">
-                            <div class="card blocprofil flipper">
-                                <a href="#" alt="La photo équipe Paul">
-                                    <img class="card-img-top front" src="img/Paul.bmp" alt="Card image cap">
-                                    <img class="card-img-top back" src="img/Paul.jpg" alt="Card image cap">
-                            </div>
-                            <div class="nomprofil">Paul</div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 flip-container">
-                            <div class="card blocprofil flipper">
-                                <a href="#" alt="La photo équipe Kapucine">
-                                    <img class="card-img-top front" src="img/Kapucine.bmp" alt="Card image cap">
-                                    <img class="card-img-top back" src="img/Kapucine.jpg" alt="Card image cap">
-                            </div>
-                            <div class="nomprofil">Kapucine</div>
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 flip-container">
-                            <div class="card blocprofil flipper">
-                                <img class="card-img-top front" src="img/Ioannis.bmp" alt="Card image cap">
-                                <img class="card-img-top back" src="img/Ioannis.jpg" alt="Card image cap">
-                            </div>
-                            <div class="nomprofil">Ioannis</div>
-                        </div>
-
-                    </div>
-                </div>
-
-
+                        </a>
             </div>
+            
 
-
-        </section>
-
-        <div class="row">
-            <div class="col-12">
-                <div class="jumbotron jumbotron-fluid jumbobas">
-                    <div class="container">
-                        <p>A funny and skilled Web Developpers team who can make your dreams come true. Are you ready to play
-                            with us ?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footeraccueil">
-            <ul>
-                <li>
-                    <a href="https://wildcodeschool.fr/" target="_blank">
-                        <img src="img/logoWCS.png " class="logowcs ">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 random">
+                    <a class="card blocprofil " href="#" alt="La photo équipe Aymeric" class="hauteurLienProfil">
+                        <div class="Bg-imgaymeric"></div>
+                        <div class="nomprofil">Aymeric</div>
                     </a>
-                </li>
-                <li>
-                    <p>Booste ta carrière dans le numérique... Sans chaussures !</p>
-                </li>
-            </ul>
+            
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 random">
+                <div class="card blocprofil ">
+                    <a href="#" alt="La photo équipe Céline" class="hauteurLienProfil">
+                        <div class="Bg-imgceline"></div>
+                </div>
+                <div class="nomprofil">Céline</div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 random">
+                <div class="card blocprofil ">
+                    <a href="#" alt="La photo équipe Paul" class="hauteurLienProfil">
+                        <div class="Bg-imgpaul"></div>
+                </div>
+                <div class="nomprofil">Paul</div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 random">
+                <div class="card blocprofil">
+                    <a href="#" alt="La photo équipe Kapucine" class="hauteurLienProfil">
+                        <div class="Bg-imgkapucine"></div>
+                </div>
+                <div class="nomprofil">Kapucine</div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 random">
+                <div class="card blocprofil">
+                    <a href="ProfilPage_Ioannis.html" alt="La photo équipe Ioannis" class="hauteurLienProfil">
+                        <div class="Bg-imgioannis"></div>
+                </div>
+                <div class="nomprofil">Ioannis</div>
+            </div>
+
         </div>
+        </div>
+
+
+
+    </section>
     </div>
 
 
@@ -178,6 +143,7 @@
         crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
         crossorigin="anonymous "></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
