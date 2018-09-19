@@ -10,9 +10,9 @@ body {
 }
 
 /* First title : 'Work attractive & creative' & 'Who's this human?'  */
-h1 {
+.profilPageTitle {
     margin: 20px;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
@@ -89,11 +89,10 @@ ul {
 
 /* Job/fonction name */
 myName {
-  font-size:1em;
+  font-size:1.3em;
   font-weight:bold;
   display:block;
   padding:5px;
-  text-align: right;
   font-family: 'Cousine', monospace;
 }
 
@@ -110,10 +109,7 @@ myName {
 
 /*Level*/
 .progBar {
-    font-weight: bold;
-    font-size: 1.3em;
-    color:#000;
-    font-family: 'Cousine', monospace;
+
 }
 
 /* flags languages */
@@ -156,26 +152,6 @@ myName {
 .fa-arrow-circle-left:hover{ color: white; }
 
 .desktopVersion { display: none; }
-
-
-
-/*----------------- FOOTER ----------------*/
-footer {
-    padding-top: 2px;
-    background: #f8f9fa;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-
-.signature { margin-bottom: 1px; }
-
-.logowcs {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
-
 
 /*------------ RESPONSIVE ---------------- */
 @media (min-width: 992px) {
