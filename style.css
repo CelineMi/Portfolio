@@ -9,122 +9,144 @@
 }
 
 
+/* Corps de la page */
 body {
   background-image: url("img/fond.png");
   background-size: 100%;
   background-repeat: repeat;
+  padding:0px;
 }
 
-h5 {
+/* Titre page acceuil + profil */
+h2 {
   font-family: "Press Start 2P";
-  font-size: 3vw;
-  text-shadow: 4px 4px 0 #000;
+  font-size:2vw;
+  text-shadow: -0.1em 0 red,
+               0.1em 0 yellow;
+  text-align: center;
+  color: black;
+  display:block;
+}
+
+/* Sous-itre page acceuil */
+h3 {
+  font-family: "Press Start 2P";
+  font-size: 1.4vw;
   text-align: center;
   color: white;
-  margin-top: 5%;
-}
-.taillelogo {
-  width: 95%;
-  text-align: right;
-  
+  margin: 5%;
+  text-shadow: 4px 4px 0 #000;
 }
 
+/* Les liens en général du site */
+a { text-decoration: none;  border:none; }
 
-.text-center {
-  width: 60%;
-  text-align: center;
+.imgDivider {
+  width:50%;
+  display:block;
+  border-radius: 5px;
 }
 
-.notrelogo {
-  background-image: url("img/logo.png");
-  height: 100%;
-}
-
-
-
-.blocprofil {
+/* Style de la section */
+.accueil {
+  margin: 5% auto;
+  width:90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
-  max-width: 250px;
-  text-align: center;
-  position: relative;
-  width: 80%;
-  margin: auto;
-  border: none;
-  margin-top: 15%;
 }
 
-.nomprofil {
-  color: white;
-  position: absolute;
-  width: 100%;
-  left: 0%;
-  text-align: center;
-  font-family: "Press Start 2P";
-  font-size: 30px;
-
-}
-
-.fondNoir{
-  background-color: black;
-  padding: 5px;
-}
-
-/* HOVER LISA */
-.hauteurLienProfil {
-  height: 300px;
-  width: 300px;
-}
-
-.Bg-imglisa {
-  margin: 0 auto;
-  position: relative;
-  background-image: url("img/Lisa1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 300px;
-  height: 300px;
-  transition: background-image 1s ease-in-out;
-  border-radius: 15px;
+/* Le container */
+.row {
+  width:100%;
+  margin:0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:10px;
+}
+
+.blocCardPro {
+  width:80%;
+}
+
+/* Le logo sur la Page d'accueil */
+  .imgLogo {
+      max-width: 50%;
+      display: block;
+      text-align:center;
+  }
+
+  .blocLogoTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+
+/* Le bloc qui entour l'image + le nom de chaque dev sur l'index */
+.blocprofil {
+  background-color: #000;
+  padding:5px;
+  margin:5px auto;
+  border-radius: 10px;
+  width:28vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+/* Les noms de chaque dev */
+nomprofil {
+  color: white;
+  display:block;
+  text-align: center;
+  font-family: "Press Start 2P";
+  font-size: 2vw;
+  text-shadow:-2px -2px 0 red;
+  margin:10px auto;
+}
+
+/* HOVER LISA */
+
+
+.Bg-imglisa {
+  background-image: url("img/Lisa1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 99;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+  width: 25vw;
+  height: 25vw;
 }
 
 .card:hover .Bg-imglisa {
-  position: relative;
   background-image: url("img/Lisa.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 /* HOVER AYMERIC */
 
 .Bg-imgaymeric {
-  margin: 0 auto;
   position: relative;
   background-image: url("img/Aymeric1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  width: 300px;
-  height: 300px;
-  transition: background-image 1s ease-in-out;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+  width: 25vw;
+  height: 25vw;
 }
 
 .card:hover .Bg-imgaymeric {
-  position: relative;
   background-image: url("img/Aymeric.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,21 +155,17 @@ h5 {
 /* HOVER CELINE */
 
 .Bg-imgceline {
-  margin: 0 auto;
   position: relative;
   background-image: url("img/Celine1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  width: 300px;
-  height: 300px;
-  transition: background-image 1s ease-in-out;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+  width: 25vw;
+  height: 25vw;
 }
 
 .card:hover .Bg-imgceline {
@@ -160,21 +178,17 @@ h5 {
 /* HOVER PAUL */
 
 .Bg-imgpaul {
-  margin: 0 auto;
   position: relative;
   background-image: url("img/Paul1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  width: 300px;
-  height: 300px;
-  transition: background-image 1s ease-in-out;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+  width: 25vw;
+  height: 25vw;
 }
 
 .card:hover .Bg-imgpaul {
@@ -187,21 +201,17 @@ h5 {
 /* HOVER KAPUCINE */
 
 .Bg-imgkapucine {
-  margin: 0 auto;
   position: relative;
   background-image: url("img/Kapucine1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  width: 300px;
-  height: 300px;
-  transition: background-image 1s ease-in-out;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+  width: 25vw;
+  height: 25vw;
 }
 
 .card:hover .Bg-imgkapucine {
@@ -214,21 +224,17 @@ h5 {
 /* HOVER IOANNIS */
 
 .Bg-imgioannis {
-  margin: 0 auto;
   position: relative;
   background-image: url("img/Ioannis1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   top: 0;
   left: 0;
   z-index: 99;
-  width: 300px;
-  height: 300px;
-  transition: background-image 1s ease-in-out;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: 1s ease-in-out;
+  border-radius: 10px;
+  width: 25vw;
+  height: 25vw;
 }
 
 .card:hover .Bg-imgioannis {
@@ -237,5 +243,3 @@ h5 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
