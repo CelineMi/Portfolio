@@ -98,7 +98,7 @@ a {
 }
 
 /* Les noms de chaque dev */
-nomprofil {
+.nomprofil {
   color: white;
   display: block;
   text-align: center;
@@ -268,7 +268,7 @@ ul {
 .sectionNames {
   max-width: 40%;
   text-align: center;
-  font-size: 1oem;
+  font-size: 1em;
   font-weight: bold;
   margin: 15px auto;
   background-color: #000;
